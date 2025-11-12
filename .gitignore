@@ -1,0 +1,17 @@
+# Файлы окружения (САМОЕ ВАЖНОЕ!)
+.env
+
+# База данных SQLite
+bot.db
+*.db
+*.db-journal
+
+# Кэш и артефакты Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальное окружение
+.venv/
+venv/
