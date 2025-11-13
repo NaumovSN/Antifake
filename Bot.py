@@ -747,7 +747,7 @@ async def show_statistics(update: Update):
                 display_name = f"@{username}" if username else first_name
                 stats_text += f"  • {display_name}: {count}\n"
 
-        await update.message.reply_text(stats_text, parse_mode='Markdown')
+        await update.message.reply_text(stats_text)
 
     except Exception as e:
         logger.error(f"Ошибка при получении статистики: {e}")
