@@ -741,7 +741,7 @@ async def show_statistics(update: Update):
         stats_text += "Обработано по администраторам:\n"
 
         if not admin_stats:
-            stats_text += "  (пока нет обработанных обращений)"
+            stats_text += "(пока нет обработанных обращений)"
         else:
             for username, first_name, count in admin_stats:
                 display_name = f"@{username}" if username else first_name
