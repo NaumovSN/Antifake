@@ -735,10 +735,10 @@ async def show_statistics(update: Update):
         ''')
         admin_stats = cursor.fetchall()
 
-        stats_text = f"📊 **Статистика Бота**\n\n"
-        stats_text += f"**Всего обращений:** {total_reports}\n"
-        stats_text += f"**Из них фейков:** {total_fakes}\n\n"
-        stats_text += "**Обработано по администраторам:**\n"
+        stats_text = f"📊 Статистика Бота\n\n"
+        stats_text += f"Всего обращений: {total_reports}\n"
+        stats_text += f"Из них фейков: {total_fakes}\n\n"
+        stats_text += "Обработано по администраторам:\n"
 
         if not admin_stats:
             stats_text += "  (пока нет обработанных обращений)"
